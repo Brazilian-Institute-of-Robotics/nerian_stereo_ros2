@@ -171,6 +171,9 @@ private:
     double maxDepth;
     bool useQFromCalibFile;
     PointCloudColorMode pointCloudColorMode;
+    std::string leftFrameId;
+    std::string rightFrameId;
+    std::string pclFrameId;
 
     // Other members
     int frameNum;
@@ -209,7 +212,7 @@ private:
      * RGB image
      */
     void publishImageMsg(const ImageSet& imageSet, int imageIndex, rclcpp::Time stamp, bool allowColorCode,
-            rclcpp::Publisher<sensor_msgs::msg::Image>::SharedPtr publisher);
+            rclcpp::Publisher<sensor_msgs::msg::Image>::SharedPtr publisher, std::string frame_id);
 
     /**
      * \brief Transform Q matrix to match the ROS coordinate system:
