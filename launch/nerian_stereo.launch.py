@@ -24,7 +24,7 @@ def generate_launch_description():
                     {'color_code_disparity_map',      ''},
                     {'color_code_legend':             False},
 
-                    {'calibration_file':              '/home/subot_focal/subot_ws/src/nerian_stereo_ros2/config/calib.yaml'},
+                    {'calibration_file':              ''},
                     {'q_from_calib_file':             False},
                     {'delay_execution':               0.0},
                     {'use_sim_time': False}

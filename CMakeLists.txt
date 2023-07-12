@@ -153,6 +153,7 @@ add_executable(nerian_stereo_node
 
 add_executable(camera_info_splitter
     src/camera_info_splitter.cpp
+    src/main.cpp
     ${COLORCODER_SOURCE_FILE}
 )
 
